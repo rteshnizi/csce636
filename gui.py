@@ -4,7 +4,8 @@ import tensorflow as tf
 import tensorflow.contrib.slim as slim
 import numpy as np
 
-checkpoint_name = "result_256p_reza2"
+checkpoint_name = "demo"
+# checkpoint_name = "result_256p_reza2"
 
 # Activation Function
 def lrelu(x):
@@ -90,13 +91,10 @@ def create_scipy_img(output):
 	return scipy.misc.toimage(np.concatenate((upper, middle, bottom), axis=0), cmin=0, cmax=255)
 
 def print_message(msg):
-	if (USE_SYS_STDOUT):
-		sys.stdout.write('%s\n' % msg)
-	else:
-		print(msg)
+	print(msg)
 
 print_message("PID = %d" % os.getpid())
-sess = tf.Session(config = config)
+sess = tf.Session()
 sp = 256 # spatial resolution: 256x512
 with tf.variable_scope(tf.get_variable_scope()):
 	label = tf.placeholder(tf.float32, [None, None, None, 20])
