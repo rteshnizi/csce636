@@ -1,14 +1,35 @@
 # Image Synthesis Based on Semantic Layout
 
+## Python Requirements
+
+The following Python libraries are needed to run the codes in this repository:
+* Tensorflow (GPU)
+* NumPy
+* SciPy
+* Pillow
+* PyTz
+
+## Large Files
+
+There are two directories that are empty in this repository: [`demo`](demo/) and [`VGG_Model`](VGG_Model/).
+
+For the codes to work the files inside these directories need to be downloaded separately from the provided URL in the README files in the respective directories.
+
+## Data set
+
+The data set for training this network is not uploaded as part of this repository due the large volume and size of the data set.
+The data set is available for download at https://www.cityscapes-dataset.com/downloads/.
+For training, the semantic layouts in `gtFine_trainvaltest.zip` (241MB) and the RGB images in `leftImg8bit_trainvaltest.zip` (11GB) are required.
+
+
 ## Training the Network
 
-The dataset for training this network is not uploaded as part of this repository due the large volume and size of the dataset. I can provide the training, validation, and test data upon request. Additionally, the size of the checkpoint file (Tensorflow session) is 1.2 GB. Github has a limit of 100MB size limit per file.
-
-To train the network, run `python train.py`
+To train the network, the label and training files should be placed in their corresponding directories, and then run `python train.py`
 
 ## Running GUI
 
 To run GUI, you need a PC with a GPU with at least 2GB of free memory.
+
 
 1. Run `python gui.py`
 2. Wait for the model to be loaded. This might take up to a minute depending on the PC's performance.

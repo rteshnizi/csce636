@@ -5,7 +5,6 @@ import tensorflow.contrib.slim as slim
 import numpy as np
 
 checkpoint_name = "demo"
-# checkpoint_name = "result_256p_reza2"
 
 # Activation Function
 def lrelu(x):
