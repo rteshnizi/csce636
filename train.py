@@ -11,7 +11,7 @@ import tensorflow as tf
 import tensorflow.contrib.slim as slim
 import numpy as np
 
-checkpoint_name = "result_256p_reza3"
+checkpoint_name = "training"
 MAX_TRAINING_IMG = 2975
 img_cnt_range = MAX_TRAINING_IMG # Default should be MAX_TRAINING_IMG
 MAX_EPOCHS = 201
