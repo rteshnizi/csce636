@@ -45,6 +45,5 @@ The below animation illustrates the quality of the output of one image in the va
 
 https://youtu.be/Tmp1ZuYSj88
 
-## GUI Demo
 
 
