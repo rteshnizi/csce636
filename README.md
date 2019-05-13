@@ -21,7 +21,6 @@ The data set for training this network is not uploaded as part of this repositor
 The data set is available for download at https://www.cityscapes-dataset.com/downloads/.
 For training, the semantic layouts in `gtFine_trainvaltest.zip` (241MB) and the RGB images in `leftImg8bit_trainvaltest.zip` (11GB) are required.
 
-
 ## Training the Network
 
 To train the network, the label and training files should be placed in their corresponding directories, and then run `python train.py`
@@ -30,6 +29,7 @@ To train the network, the label and training files should be placed in their cor
 
 To run GUI, you need a PC with a GPU with at least 2GB of free memory.
 
+A video demoing the GUI is available at https://youtu.be/nLnGzxoUMj0
 
 1. Run `python gui.py`
 2. Wait for the model to be loaded. This might take up to a minute depending on the PC's performance.
@@ -38,3 +38,13 @@ To run GUI, you need a PC with a GPU with at least 2GB of free memory.
 5. Click RUN! to run the image through the trained network.
 6. The first run would take up to a minute depending on the PC's performance.
 7. The synthesized image will appear in the right hand side of the GUI panel.
+
+## Validation Data
+
+The below animation illustrates the quality of the output of one image in the validation set over the span of 200 epochs.
+
+https://youtu.be/Tmp1ZuYSj88
+
+## GUI Demo
+
+
